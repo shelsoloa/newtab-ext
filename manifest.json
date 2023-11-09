@@ -1,0 +1,10 @@
+{
+    "name": "New Tab",
+    "author": "shel@shelsoloa.com",
+    "version": "1.0",
+    "description": "New Tab extension",
+    "chrome_url_overrides": {
+        "newtab": "main.html"
+    },
+    "manifest_version": 3
+}

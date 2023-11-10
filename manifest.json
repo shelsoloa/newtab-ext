@@ -1,10 +1,18 @@
 {
-    "name": "New Tab",
-    "author": "shel@shelsoloa.com",
-    "version": "1.0",
-    "description": "New Tab extension",
-    "chrome_url_overrides": {
-        "newtab": "main.html"
-    },
-    "manifest_version": 3
+  "name": "BlockTab",
+  "author": "shel@shelsoloa.com",
+  "version": "1.0",
+  "description": "New Tab extension",
+  "chrome_url_overrides": {
+    "newtab": "main.html"
+  },
+  "manifest_version": 3,
+  "content_security_policy": {
+    "sandbox": "sandbox allow-scripts allow-popups allow-same-origin; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://apis.google.com https://accounts.google.com; object-src 'self' 'unsafe-inline' 'unsafe-eval'"
+  },
+  "sandbox": {
+    "pages": [
+      "main.html"
+    ]
+  }
 }
